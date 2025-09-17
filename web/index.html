@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>$WalkEU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <h1>$WalkEU</h1>
+        <p>Visiting every European country on PumpFun live</p>
+      </div>
+      <div class="links">
+        <a href="https://pump.fun/coin/YOUR_TOKEN" target="_blank">Pump.fun</a>
+        <a href="https://x.com/YOUR_HANDLE" target="_blank">Follow on X</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Walk across Europe on PumpFun live with us</h2>
+    <p>Visiting every European country (except Russia & Ukraine) with friends.  
+    Sharing cultures, stories, and building the $WalkEU community.</p>
+    <div class="mint-box">
+      <code id="mint">YOUR_SOLANA_MINT</code>
+      <button onclick="copyMint()">Copy</button>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="roadmap">
+    <svg id="road" viewBox="0 0 1200 3600" width="100%" height="3600">
+      <defs>
+        <linearGradient id="roadg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#0f2518"/>
+          <stop offset="100%" stop-color="#0b1a12"/>
+        </linearGradient>
+      </defs>
+      <!-- Highway -->
+      <path id="roadPath" d="M600,0 C220,600 980,1200 220,1800 980,2400 220,3000 600,3600"
+            stroke="url(#roadg)" stroke-width="140" fill="none" stroke-linecap="round"/>
+      <!-- Center dashed line -->
+      <path d="M600,0 C220,600 980,1200 220,1800 980,2400 220,3000 600,3600"
+            stroke="#c7f9cc" stroke-width="8" stroke-dasharray="28 28" fill="none"/>
+    </svg>
+
+    <div id="markers"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> $WalkEU — Visiting every country in Europe on PumpFun live</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
