@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #064e3b, #011b12, black);
+  color: #ecfdf5;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(6, 78, 59, 0.8);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(16, 185, 129, 0.3);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.nav-container p {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.nav-container .links a {
+  margin-left: 12px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  background: #34d399;
+  color: black;
+  text-decoration: none;
+}
+
+.hero {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.mint-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(16,185,129,0.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.mint-box code {
+  font-family: monospace;
+  font-size: 12px;
+  background: rgba(0,0,0,0.5);
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.mint-box button {
+  background: #10b981;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.roadmap {
+  position: relative;
+  height: 3600px;
+}
+
+#road {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: rgba(6, 95, 70, 0.8);
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(16,185,129,0.3);
+  font-size: 12px;
+}
+
+.marker .label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  border-top: 1px solid rgba(16,185,129,0.3);
+  color: #a7f3d0;
+}
